@@ -9,7 +9,7 @@ typedef struct Node {
 
 int main()
 {
-    // Init
+    // Allocating memory for newNode_001 and newNode_002
     Node *newNode_001 = malloc(sizeof(Node));
     Node *newNode_002 = malloc(sizeof(Node));
     // Assigning vars
