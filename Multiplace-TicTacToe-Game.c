@@ -8,6 +8,24 @@ void drawXOBoard() {
                             {'7','8','9'}
     };
     
+    // Store all variable requered for final result
+    int boardMatrixClone[4][4] = {
+                            {0, 0, 0, 0},
+                            {0, 0, 0, 0},
+                            {0, 0, 0, 0},
+                            {0, 0, 0, 0}
+    }
+    
+    int j1 = 0;
+    int j2 = 0;
+    for(j1 = 0; j1 < 3; j1++) {
+        for(j2 = 0; j2 < 3; j2++) {
+            if(boardMatrix[j1][j2] == "X") {
+                boardMatrixClone[j1][j2] = 2;
+            }
+        } 
+    }
+    
     // For-loop to print the arrays
     int i = 0;
     for(i = 0; i < 3; i++) {
@@ -16,7 +34,7 @@ void drawXOBoard() {
     }
     printf(".---.---.---.\n");
 }
-
+/*
 bool spotChecker(char XOBoard[3][3], int choosenSpot) {
     char targetSpot = (char)choosenSpot;
     
@@ -40,15 +58,8 @@ bool spotChecker(char XOBoard[3][3], int choosenSpot) {
     
     return isEmpty;
 }
-
+*/
 int main() {
-    char boardMatrix[3][3] = {
-                            {'1','2','3'},
-                            {'4','X','6'},
-                            {'7','8','9'}
-    };
-    
-    bool emptyOrNot = spotChecker(boardMatrix, 5);
-    printf("%d", emptyOrNot);
+    // Nothing special here ...
     return 0;
 }
