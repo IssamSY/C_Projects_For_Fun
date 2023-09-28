@@ -15,7 +15,8 @@ void drawXOBoard() {
                             {0, 0, 0, 0},
                             {0, 0, 0, 0}
     }
-    
+
+    // Changing the elements of boardMatrixClone corresponding to boardMatrix
     int j1 = 0;
     int j2 = 0;
     for(j1 = 0; j1 < 3; j1++) {
